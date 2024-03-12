@@ -1,0 +1,3 @@
+resize_algorithm = bilinear
+define_size = 64, size_bdiag.svg
+

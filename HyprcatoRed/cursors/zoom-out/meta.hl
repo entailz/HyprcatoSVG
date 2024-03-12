@@ -1,0 +1,3 @@
+define_size = 64, zoom-out.svg
+resize_algorithm = bilinear
+

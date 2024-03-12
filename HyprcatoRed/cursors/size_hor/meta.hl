@@ -1,0 +1,3 @@
+define_size = 64, size_hor.svg
+resize_algorithm = bilinear
+

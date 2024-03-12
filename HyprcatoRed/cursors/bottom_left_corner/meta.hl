@@ -1,0 +1,5 @@
+resize_algorithm = bilinear
+hotspot_y = 0.5
+hotspot_x = 0.5
+define_size = 64, bottom_left_corner.svg
+

@@ -1,0 +1,21 @@
+ # what resize algorithm to use when a size is requested
+# that doesn't match any of your predefined ones.
+# available: bilinear, nearest, none. None will pick the closest. Nearest is nearest neighbor.
+resize_algorithm = bilinear
+define_size = 64, default.svg
+# "hotspot" is where in your cursor the actual "click point" should be.
+# this is in absolute coordinates. x+ is east, y+ is north.
+
+# Define what cursor images this one should override.
+# What this means is that a request for a cursor name e.g. "arrow"
+# will instead use this one, even if this one is named something else.
+# define_override = default
+
+# define your size variants.
+# Multiple size variants for the same size are treated as an animation.
+
+# If you want to animate it, add a timeout in ms at the end:
+# define_size = 64, anim1.png, 500
+# define_size = 64, anim2.png, 500
+# define_size = 64, anim3.png, 500
+# define_size = 64, anim4.png, 500

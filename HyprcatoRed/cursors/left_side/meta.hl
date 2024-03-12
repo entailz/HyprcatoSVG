@@ -1,0 +1,4 @@
+define_size = 64, left_side.svg
+
+resize_algorithm = bilinear
+

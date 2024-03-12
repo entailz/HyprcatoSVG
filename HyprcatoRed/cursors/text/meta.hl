@@ -1,0 +1,4 @@
+define_size = 64, text.svg
+hotspot_y = .5
+resize_algorithm = bilinear
+

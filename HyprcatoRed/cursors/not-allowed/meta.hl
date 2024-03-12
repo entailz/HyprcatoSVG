@@ -1,0 +1,4 @@
+define_size = 64,not-allowed.svg
+
+resize_algorithm = bilinear
+

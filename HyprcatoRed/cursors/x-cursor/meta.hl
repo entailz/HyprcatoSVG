@@ -1,0 +1,2 @@
+resize_algorithm = bilinear
+define_size = 64, x-cursor.svg

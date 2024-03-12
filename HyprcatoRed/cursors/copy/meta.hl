@@ -1,0 +1,4 @@
+resize_algorithm = bilinear
+
+define_size = 64, copy.svg
+

@@ -1,0 +1,3 @@
+define_size = 64, pirate.svg
+resize_algorithm = bilinear
+
