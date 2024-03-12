@@ -1,4 +1,5 @@
 ## Hypr-Catppuccin Cursor Themes
 
-#####requirements: hyprland + hyprcursor
+##### requirements: hyprland + hyprcursor
+
 feel free to request.
