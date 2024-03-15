@@ -1,3 +1,0 @@
-define_size = 64, wayland-cursor.svg
-resize_algorithm = bilinear
-
