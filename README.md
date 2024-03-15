@@ -4,4 +4,5 @@
 
 ##### requirements: hyprland + hyprcursor
 
-feel free to request.
+check hyprcato-gen.sh to generate your own!
+\*only works with Catppuccin SVG cursor themes
