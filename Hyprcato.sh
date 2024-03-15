@@ -1,4 +1,12 @@
 #!/bin/bash
+
+# point at directory of SVG's that you would like to hypr
+#
+#         /ᐠ 、
+#      ミ(˚. 。*フ
+#        |    ˜〵
+#         しし._)ノ
+
 shopt -s extglob
 SVGDIR=$1
 NAMED="${2:-antmode}"
