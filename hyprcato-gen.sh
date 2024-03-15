@@ -43,36 +43,28 @@ define_size = 64, $file"
 done
 
 #wait cursor meta
-echo "resize_algorithm = bilinear
-define_size = 64, $ANIMONE-01.svg,500
-define_size = 64, $ANIMONE-02.svg,500
-define_size = 64, $ANIMONE-03.svg,500
-define_size = 64, $ANIMONE-04.svg,500
-define_size = 64, $ANIMONE-05.svg,500
-define_size = 64, $ANIMONE-06.svg,500
-define_size = 64, $ANIMONE-07.svg,500
-define_size = 64, $ANIMONE-08.svg,500
-define_size = 64, $ANIMONE-09.svg,500
-define_size = 64, $ANIMONE-10.svg,500
-define_size = 64, $ANIMONE-11.svg,500
-define_size = 64, $ANIMONE-12.svg,500
-" >>$ANIMONE/meta.hl
-
+function process_meta() {
+  local name=$1
+  local ANIM="$name"
+  echo "resize_algorithm = bilinear
+define_size = 64, $ANIM-01.svg,500
+define_size = 64, $ANIM-02.svg,500
+define_size = 64, $ANIM-03.svg,500
+define_size = 64, $ANIM-04.svg,500
+define_size = 64, $ANIM-05.svg,500
+define_size = 64, $ANIM-06.svg,500
+define_size = 64, $ANIM-07.svg,500
+define_size = 64, $ANIM-08.svg,500
+define_size = 64, $ANIM-09.svg,500
+define_size = 64, $ANIM-10.svg,500
+define_size = 64, $ANIM-11.svg,500
+define_size = 64, $ANIM-12.svg,500
+" >>$ANIM/meta.hl
+}
 #progress cursor meta
-echo "resize_algorithm = bilinear
-define_size = 64, $ANIMTWO-01.svg,500
-define_size = 64, $ANIMTWO-02.svg,500
-define_size = 64, $ANIMTWO-03.svg,500
-define_size = 64, $ANIMTWO-04.svg,500
-define_size = 64, $ANIMTWO-05.svg,500
-define_size = 64, $ANIMTWO-06.svg,500
-define_size = 64, $ANIMTWO-07.svg,500
-define_size = 64, $ANIMTWO-08.svg,500
-define_size = 64, $ANIMTWO-09.svg,500
-define_size = 64, $ANIMTWO-10.svg,500
-define_size = 64, $ANIMTWO-11.svg,500
-define_size = 64, $ANIMTWO-12.svg,500
-" >>$ANIMTWO/meta.hl
+
+process_meta $ANIMONE
+process_meta $ANIMTWO
 
 mv !(cursors) ./cursors
 rm cursors/index.theme
