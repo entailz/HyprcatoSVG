@@ -8,20 +8,20 @@ ANIMTWO="${4:-"progress"}"
 #conditions should be met first
 
 if [ -n "$1" ]; then
-  if [ -d "$1" ]; then
-    if [ ! -f "$1/manifest.hl" ]; then
-      echo "All conditions met, proceeding with conversion..."
-    else
-      echo "Error: $1 already has a manifest.hl file."
-      exit 1
-    fi
-  else
-    echo "Error: $1 is not a directory."
-    exit 1
-  fi
+	if [ -d "$1" ]; then
+		if [ ! -f "$1/manifest.hl" ]; then
+			echo "All conditions met, proceeding with conversion..."
+		else
+			echo "Error: $1 already has a manifest.hl file."
+			exit 1
+		fi
+	else
+		echo "Error: $1 is not a directory."
+		exit 1
+	fi
 else
-  echo "Error: No argument provided."
-  exit 1
+	echo "Error: No argument provided."
+	exit 1
 fi
 
 #prepare directory, remove any extraneous files
@@ -34,19 +34,18 @@ mv $ANIMTWO-* $ANIMTWO
 #create a containing folder with name of icon
 
 for file in *.svg; do
-  file_contents="resize_algorithm = bilinear
+	file_contents="resize_algorithm = bilinear
 define_size = 64, $file"
-  direct="${file%.svg}"
-  mkdir -- "$direct"
-  mv -- "$file" "$direct"
-  echo "$file_contents" >$direct/meta.hl
+	direct="${file%.svg}"
+	mkdir -- "$direct"
+	mv -- "$file" "$direct"
+	echo "$file_contents" >$direct/meta.hl
 done
 
 #wait cursor meta
 function process_meta() {
-  local name=$1
-  local ANIM="$name"
-  echo "resize_algorithm = bilinear
+	local ANIM="$1"
+	echo "resize_algorithm = bilinear
 define_size = 64, $ANIM-01.svg,500
 define_size = 64, $ANIM-02.svg,500
 define_size = 64, $ANIM-03.svg,500
