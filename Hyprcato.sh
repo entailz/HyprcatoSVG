@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # point at directory of SVG's that you would like to hypr
 #
